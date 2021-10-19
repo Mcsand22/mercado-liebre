@@ -2,48 +2,68 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Roboto';
 }
 
 body {
-    font-family: 'Roboto';
     font-size: 12px;
-    padding: 0;
 }
 .main-header {
     background-color: #EAC926;
-    width: 100%;
+    width: 100vw;
     padding: 0;
+
+}
+
+.main-header-top-bar{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .logo {
     width: 150px;
     height: 80px;
     padding: 10px;
+    flex-grow: 0.50;
+    transition: 1000ms;
+
 }
+.barra-busqueda{
+    display: flex;
+    flex-grow: 0.50;
+}
+
 
 #search{
     margin-left: 20px;
-
-}
-
-.lupa{
-    text-align: center;
-    font-size: 15px;
+    flex-grow: 0.50;
+    max-height: 25px;
+    max-width: 50%;
+    margin-top: 15px;
+    padding: 0;
+    border: solid white 3px;
+    border-radius: 3px;
 }
 
 #find{
-    background-color: #ebebeb;
-    margin-top: 2px;
-    width: 18px;
-    height: 18px;
-    margin-left: 20px;
-    border: 1px solid #666;
+    padding-top: 3px;
+    text-align: center;
+    width: 25px;
+    max-height: 25px;
+    margin-top: 15px;
+    background-color: white;
+    color: #666;
+    border: solid white 3px;
+    border-radius: 3px;
     cursor: pointer;
+
+    
 }
 
 .primer-encabezado {
     text-align: center;
     padding: 20px;
+    margin: auto;
 }
 
 .burger-menu{
@@ -64,6 +84,11 @@ main {
     background-color: #ebebeb;
     font-family: 'Roboto', sans-serif;
     padding-bottom: 15px;
+}
+
+.main-navbar{
+    display: none;
+    padding: 5px;
 }
 
 .main-navbar ul{
@@ -87,7 +112,8 @@ main {
 
 .al90 {
     width: 90%;
-    margin: 0 auto;
+    margin: auto;
+    padding-top: 20px;
 }
 
 .img-product {
@@ -95,16 +121,23 @@ main {
     height: auto;
 }
 
+.lista-productos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .productos{ 
     margin-bottom: 10px;
-    padding: 15px;
+    padding: 15 0 15 15;
     background-color: #ebebeb;
+    transition: all 1000ms;
 }
 
 .detalle {
     border: solid 1px #ebebeb;
     padding: 15px;
     background-color: white;
+    position: relative;
 }
 
 #truck{
@@ -119,6 +152,7 @@ main {
     right: 20px;
     top: -15px;
     color: #39b54a;
+    position: absolute;
     }
 
 h3 {
@@ -126,13 +160,16 @@ h3 {
     color: #666;
 }
 
-.precios {
-    font-size: 18px;
-}
-
 .titulo-productos{
     display: flex;
+    max-width: 70%;
+}
 
+.precios {
+    font-size: 18px;
+    flex-grow: 0.30;
+    padding: 0;
+    margin: 0px;
 }
 
 .descripcion, 
@@ -142,7 +179,8 @@ h3 {
 
 .descuentos {
     color:  #39b54a;
-    flex-grow: 70%;
+    flex-grow: 0.70;
+
 }
 
 .descripcion {
@@ -155,7 +193,8 @@ footer {
     padding-top: 30px;
     font-family: 'Roboto', sans-serif;
     color: #666;
-    width: 90%;
+    align-items: center;
+    margin: auto;
 }
 
 .foot-p{
@@ -179,7 +218,91 @@ footer {
     text-align: left;
 }
 
+form{
+    text-align: center;
+    padding: 20px;
+    background-color: #ebebeb;
+}
 
+label{
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 15px;
+}
+
+.log{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 40vw;
+}
+
+.log input{
+    width: 35vw;
+    border: solid #ffffff 3px;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 15px;
+    margin-bottom: 25px;
+}
+
+button{
+    background-color: #1259c3;
+    color: #ffffff;
+    padding: 5px 0;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+    display: block;
+    border: solid #1259c3 3px;
+    width: 35vw;
+    margin-bottom: 5px;
+}
+
+button a{
+    text-decoration: none;
+}
+
+button a:visited{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.control-form{
+    margin-bottom: 15px;
+}
+
+.control-form label{
+    margin-bottom: 5px;
+    display: block;
+    font-weight: bold;
+
+}
+
+.control-form input{
+    border: solid #ffffff 3px;
+    border-radius: 5px;
+    width: 40vw;
+    padding: 10px;
+    margin: 15px;
+    
+}
+
+.control-form2{
+    margin: 15px;
+    padding: 10px;
+
+}
+
+input:invalid {
+
+  }
+  
+  
+  
 
 
 @media (min-width: 361px){
@@ -188,9 +311,48 @@ footer {
     }
     .productos{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        margin: 2%;
     }
 }
 
 @media (min-width: 769px){
-  
+
+    .primer-encabezado{
+        text-align: right;
+    }
+
+    .main-navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+ 
+    .main-navbar li{
+        margin: 0 5px;
+    }
+    
+    .menu1, .menu2{
+        display: flex;
+    }
+    
+    .burger-menu{
+        display: none;
+    }
+
+    h3{
+        display: block;
+        margin-bottom: 8px;
+        padding: 5px;
+        
+    }
+
+    .productos{
+        max-width: 40%;
+    }
+
+}
+
+@media (min-width: 1280px){
+    .productos{
+        max-width: 20%;
+    }
 }
