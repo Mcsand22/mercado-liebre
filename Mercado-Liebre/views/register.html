@@ -13,10 +13,10 @@
     <header class="main-header">
         <div class="main-header-top-bar">
             <img class="logo" src="/img/logo-mercado-liebre.svg" alt="Logo Mercado Liebre">
-            <div class="barra-busqueda">
                 <input type="search" id="search" placeholder="Buscar productos, marcas">
-                <i id="find" class="fas fa-search"></i>
-            </div>      
+                <div class="barra-busqueda">
+                    <i id="find" class="fas fa-search"></i>  
+                </div>    
             <div class="primer-encabezado"><i class="fas fa-hand-holding-usd"></i>
                 Comprá en cuotas y sin tarjeta de crédito</div>
         </div>
@@ -40,7 +40,7 @@
     <main>
         <form class="registro" action="/register" method="POST">
             <p class="control-form">
-                <input type="text" name="nombre-completo" id="nombre-completo" placeholder= "Nombre y apellido" required>
+                <input type="text" name="nombre-completo" id="nombre-completo" placeholder= "Nombre y apellido" required minlength="8">
             </p>
             <p class="control-form">
                 <input type="text" name="user" id="user" placeholder="Nombre de usuario"  required>
@@ -57,16 +57,18 @@
             </p>
             <p class="control-form2">
                 <label for="user-profile">Perfil de usuario:</label><br>
-                <input type="radio" name="user-profile" value="Comprador">Comprador
-                <input type="radio" name="user-profile" value="Vendedor">Vendedor
+                <div id="user-profile">
+                    <input type="radio" name="user-profile" value="Comprador">Comprador
+                    <input type="radio" name="user-profile" value="Vendedor">Vendedor
+                </div>
             </p>
             <p> 
                 <label for="intereses">Categorías de interés:</label><br>
-                <input type="checkbox" name="intereses" value="Electro" checked>Electro<br>
-                <input type="checkbox" name="intereses" value="Moda">Moda<br>
-                <input type="checkbox" name="intereses" value="Hogar">Hogar<br>
-                <input type="checkbox" name="intereses" value="Juguetería">Juguetería<br>
-                <input type="checkbox" name="intereses" value="Vida sana">Vida sana<br>
+                <p id="lista-intereses"><input type="checkbox" name="intereses" value="Electro" checked> Electro</p><br>
+                <p id="lista-intereses"><input type="checkbox" name="intereses" value="Moda"> Moda</p><br>
+                <p id="lista-intereses"><input type="checkbox" name="intereses" value="Hogar"> Hogar</p><br>
+                <p id="lista-intereses"><input type="checkbox" name="intereses" value="Juguetería"> Juguetería</p><br>
+                <p id="lista-intereses"><input type="checkbox" name="intereses" value="Vida sana"> Vida sana</p><br>
             </p>
             <p class="control-form">
                 <label for="avatar">Foto de usuario:</label>
