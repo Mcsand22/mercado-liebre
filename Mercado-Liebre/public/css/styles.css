@@ -196,6 +196,7 @@ h3 {
 
 article:hover .descripcion{
     display: block;
+    transition: all 1000ms;
 }
 
 footer {
@@ -398,8 +399,8 @@ button a:visited{
 
     .copyright{
         position: absolute;
-        right: 1260px;
-        top: 1600px;
+        right: 1000px;
+        top: 1400px;
     }
 
     .copy{
