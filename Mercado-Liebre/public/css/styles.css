@@ -398,14 +398,14 @@ button a:visited{
 
     .copyright{
         position: absolute;
-        right: 1050px;
-        top: 1450px;
+        right: 1260px;
+        top: 1600px;
     }
 
     .copy{
         padding-top: 10px;
         position:absolute;
-        bottom: -200px;
+        bottom: -100px;
         left: 1px;
     }
 
