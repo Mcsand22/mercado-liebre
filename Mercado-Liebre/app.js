@@ -1,13 +1,16 @@
 const express = require('express');
+const { Server } = require('http');
 const app = express();
 const path = require('path');
+const port = process.env.PORT || 5000;
 
 const publicPath = path.resolve(__dirname, './public');
 app.use(express.static(publicPath));
 
-app.listen(process.env.PORT || 5000, function () {
-    console.log('Servidor corriendo en el puerto 5000');
-});
+
+app.listen(port, ()=>{
+    console.log("start server");
+})
 
 
 let home = "./views/home.html"
