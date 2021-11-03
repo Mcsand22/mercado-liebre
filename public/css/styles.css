@@ -1,0 +1,416 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+body {
+    font-size: 12px;
+}
+.main-header {
+    background-color: #EAC926;
+    width: 100%;
+    padding: 0;
+    font-weight: bold;
+
+}
+
+.main-header-top-bar{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    flex-grow: 0.50;
+    transition: 1000ms;
+}
+.barra-busqueda{
+    display: flex;
+    flex-grow: 0.50;
+}
+
+
+#search{
+    margin-left: 20px;
+    flex-grow: 0.50;
+    max-height: 25px;
+    max-width: 50%;
+    margin-top: 15px;
+    padding: 0;
+    border: solid white 3px;
+    border-radius: 3px;
+}
+
+#find{
+    padding-top: 3px;
+    text-align: center;
+    width: 25px;
+    max-height: 25px;
+    margin-top: 15px;
+    background-color: white;
+    color: #666;
+    border: solid white 3px;
+    border-radius: 3px;
+    cursor: pointer;
+
+    
+}
+
+.primer-encabezado {
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+}
+
+.burger-menu{
+    background-color: #1259c3;
+    color: #ffffff;
+    max-width: 40px;
+    max-height: 40px;
+    padding: 5px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 25px;
+    margin: auto;
+    display: block;
+}
+
+main {
+    width: 100%;
+    background-color: #ebebeb;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 15px;
+}
+
+.main-navbar{
+    display: none;
+    padding: 5px;
+}
+
+.main-navbar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navbar a{
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 3px 0;
+}
+
+.banner{
+    width: 100%;
+    padding-top: 10px;
+    vertical-align: bottom;
+}
+
+.al90 {
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.img-product {
+    width: 100%;
+    height: auto;
+}
+
+.lista-productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.productos{ 
+    margin-bottom: 10px;
+    padding: 15 0 15 15;
+    background-color: #ebebeb;
+    transition: all 1000ms;
+}
+
+.detalle {
+    border: solid 1px #ebebeb;
+    padding: 15px;
+    background-color: white;
+    position: relative;
+}
+
+#truck{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    right: 20px;
+    top: -15px;
+    color: #39b54a;
+    position: absolute;
+    }
+
+article:hover #truck{
+    transform: rotate(-90deg);
+    transition: 1000ms;
+}
+
+h3 {
+    font-size: 24px;
+    color: #666;
+}
+
+.titulo-productos{
+    display: flex;
+    max-width: 70%;
+}
+
+.precios {
+    font-size: 18px;
+    flex-grow: 0.30;
+    padding: 0;
+    margin: 0px;
+}
+
+.descripcion, 
+.descuentos {
+    font-size: 16px;
+}
+
+.descuentos {
+    color:  #39b54a;
+    flex-grow: 0.70;
+
+}
+
+.descripcion {
+    color: #666;
+    display: none;
+}
+
+article:hover .descripcion{
+    display: block;
+    transition: all 1000ms;
+}
+
+footer {
+    text-align: center;
+    padding-top: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+    align-items: center;
+    margin: auto;
+}
+
+.foot-p{
+    margin-top: 0px;
+}
+
+.foot-h{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 16px;
+}
+
+#icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #1259c3;
+}
+
+.copyright{
+    padding-top: 20px;
+    text-align: left;
+}
+
+form{
+    text-align: center;
+    padding: 20px;
+    background-color: #ebebeb;
+}
+
+
+label{
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 15px;
+}
+
+.log{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 40vw;
+    padding-bottom: 10%;
+    padding-top: 10%;
+}
+
+
+
+.log input{
+    width: 35vw;
+    border: solid #ffffff 3px;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 15px;
+    margin-bottom: 25px;
+}
+
+button{
+    background-color: #1259c3;
+    color: #ffffff;
+    padding: 5px 0;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+    display: block;
+    border: solid #1259c3 3px;
+    width: 35vw;
+    margin-bottom: 5px;
+}
+
+button:hover{
+    background-color: #0022AA;
+}
+
+button a{
+    text-decoration: none;
+}
+
+button a:visited{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.control-form{
+    margin-bottom: 15px;
+}
+
+.control-form label{
+    margin-bottom: 5px;
+    display: block;
+    font-weight: bold;
+
+}
+
+.control-form input{
+    border: solid #ffffff 3px;
+    border-radius: 5px;
+    width: 40vw;
+    padding: 10px;
+    margin: 15px;
+    
+}
+
+.control-form2{
+    margin: 15px;
+    padding: 10px;
+
+}
+
+#lista-intereses{
+    padding-top: 10px;
+    font-size: 1rem;
+}
+
+#user-profile{
+    padding-bottom: 15px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 200px;
+}
+
+@media (min-width: 361px){
+    .productos{
+        margin: 2%;
+    }
+
+    .productos:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .copy{
+        padding-top: 30px;
+    }
+}
+
+@media (min-width: 769px){
+
+    .primer-encabezado{
+        text-align: right;
+    }
+
+    .main-navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+ 
+    .main-navbar li{
+        margin: 0 5px;
+    }
+    
+    .menu1, .menu2{
+        display: flex;
+    }
+    
+    .burger-menu{
+        display: none;
+    }
+
+    h3{
+        display: block;
+        margin-bottom: 8px;
+        padding: 5px;
+        
+    }
+
+    .productos{
+        max-width: 40%;
+    }
+}
+
+@media (min-width: 1280px){
+    .productos{
+        max-width: 20%;
+    }
+
+    footer{
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    footer section{
+        margin: 30px;
+        padding: 10px;
+    }
+
+    .copyright{
+        position: absolute;
+        right: 1050px;
+        top: 1440px;
+    }
+
+    .copy{
+        padding-top: 10px;
+        position:absolute;
+        bottom: -100px;
+        left: 1px;
+    }
+
+    #icon:hover{
+        color: #0022AA;
+    }
+}
